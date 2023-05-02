@@ -20,7 +20,8 @@ public class EllipticCurveKeyExample {
 		return keyPair;
     }
 
-	public KeyPair getKeyPair() throws Exception {
+	public KeyPair getKeyPair() throws Exception 
+	{
 		if(keyPair == null)
 		{
 			keyPair = generateKeyPair();
@@ -28,14 +29,34 @@ public class EllipticCurveKeyExample {
 		return keyPair;
 	}
 	
-	//TODO das Strings übergeben werden und keine byte[]
-	public byte[] getKeyPairDes() throws Exception
-	{
-		KeyPair ecKeyPair = getKeyPair();
-		byte[] ecPrivateKey = ecKeyPair.getPrivate().getEncoded();
-		byte[] desKey = new byte[24];
-		System.arraycopy(ecPrivateKey, 0, desKey, 0, 24);
+	 // Converts the private key of the EC key pair to a Base64-encoded string
+    public String getKeyPairDes() throws Exception 
+    {
+        KeyPair ecKeyPair = getKeyPair();
+        byte[] ecPrivateKey = ecKeyPair.getPrivate().getEncoded();
+        byte[] desKey = new byte[24];
+        System.arraycopy(ecPrivateKey, 0, desKey, 0, 24);
 
-		return desKey;
-	}
+        return byteArrayToString(desKey);
+    }
+    
+    public String byteArrayToString(byte[] byteArray) 
+    {
+        StringBuilder sb = new StringBuilder(byteArray.length * 2);
+        for (byte b : byteArray) {
+            sb.append(String.format("%02x", b));
+        }
+        return sb.toString();
+    }
+    
+    public static byte[] stringToByteArray(String str) 
+    {
+        int len = str.length();
+        byte[] data = new byte[len / 2];
+        for (int i = 0; i < len; i += 2) {
+            data[i / 2] = (byte) ((Character.digit(str.charAt(i), 16) << 4)
+                                 + Character.digit(str.charAt(i+1), 16));
+        }
+        return data;
+    }
 }

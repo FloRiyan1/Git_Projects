@@ -9,8 +9,8 @@ public class Main {
 
 		try
 		{
-			byte[] key = keyGen.getKeyPairDes();
-			byte[] encryptedCode = threeDES.encrypt("Test von text zum Encryten", key);
+			String key = keyGen.getKeyPairDes();
+			byte[] encryptedCode = threeDES.encrypt("Test von Text zum Eingeben",key);
 			System.out.println(encryptedCode);
 			System.out.println(threeDES.decrypt(encryptedCode, key));
 		}

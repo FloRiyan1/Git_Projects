@@ -1,0 +1,24 @@
+package test;
+
+public class Main {
+
+	public static void main(String[] args) {
+
+		ThreeDES threeDES = new ThreeDES();
+		EllipticCurveKeyExample keyGen = new EllipticCurveKeyExample();
+
+		try
+		{
+			byte[] key = keyGen.getKeyPairDes();
+			byte[] encryptedCode = threeDES.encrypt("Test von text zum Encryten", key);
+			System.out.println(encryptedCode);
+			System.out.println(threeDES.decrypt(encryptedCode, key));
+		}
+		catch (Exception e) 
+		{
+			e.printStackTrace();
+		}
+		
+	}
+
+}

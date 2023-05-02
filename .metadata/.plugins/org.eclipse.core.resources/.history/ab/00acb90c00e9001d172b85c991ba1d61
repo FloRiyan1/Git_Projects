@@ -1,0 +1,25 @@
+package test;
+
+import java.security.KeyPair;
+import java.security.KeyPairGenerator;
+import java.security.PrivateKey;
+import java.security.PublicKey;
+import java.security.SecureRandom;
+import java.security.spec.ECGenParameterSpec;
+import java.util.Base64;
+
+public class EllipticCurveKeyExample {
+	
+	
+	
+    public KeyPair generateKeyPair() throws Exception 
+    {    	
+    	String curveName = "secp256r1";
+        KeyPairGenerator keyGen = KeyPairGenerator.getInstance("EC", "SunEC");
+        ECGenParameterSpec ecSpec = new ECGenParameterSpec(curveName);
+        keyGen.initialize(ecSpec, new SecureRandom());
+        KeyPair keyPair = keyGen.generateKeyPair();
+
+		return keyPair;
+    }
+}

@@ -1,0 +1,32 @@
+package test;
+import org.bouncycastle.jce.ECNamedCurveTable;
+import org.bouncycastle.jce.spec.ECParameterSpec;
+import org.bouncycastle.math.ec.ECPoint;
+import java.math.BigInteger;
+import java.security.KeyPair;
+import java.security.KeyPairGenerator;
+import java.security.SecureRandom;
+
+public class EllipticCurveKeyExample {
+    public static void main(String[] args) throws Exception {
+        // Get the parameters for the secp256r1 curve
+        ECParameterSpec params = ECNamedCurveTable.getParameterSpec("secp256r1");
+
+        // Create a key pair generator using the elliptic curve parameters
+        KeyPairGenerator keyPairGen = KeyPairGenerator.getInstance("EC", "BC");
+        keyPairGen.initialize(params, new SecureRandom());
+
+        // Generate a new key pair
+        KeyPair keyPair = keyPairGen.generateKeyPair();
+
+        // Get the public key from the key pair
+        ECPoint publicKey = ((org.bouncycastle.jce.interfaces.ECPublicKey) keyPair.getPublic()).getQ();
+
+        // Print the x and y coordinates of the public key to the console
+        BigInteger x = publicKey.getAffineXCoord().toBigInteger();
+        BigInteger y = publicKey.getAffineYCoord().toBigInteger();
+        System.out.println("Public key x-coordinate: " + x.toString(16));
+        System.out.println("Public key y-coordinate: " + y.toString(16));
+    }
+}
+In this exam

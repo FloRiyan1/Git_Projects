@@ -1,0 +1,24 @@
+package test;
+
+import java.math.BigInteger;
+import java.security.KeyPair;
+import java.security.KeyPairGenerator;
+import java.security.SecureRandom;
+import java.security.Security;
+import java.security.spec.ECParameterSpec;
+
+import org.bouncycastle.asn1.x9.ECNamedCurveTable;
+import org.bouncycastle.math.ec.ECPoint;
+import org.bouncycastle.*;
+
+public class EllipticCurveKeyExample {
+    public static void main(String[] args) throws Exception {
+        // Generate a key pair using the secp256r1 elliptic curve
+        KeyPairGenerator keyPairGenerator = KeyPairGenerator.getInstance("EC", "BC");
+        keyPairGenerator.initialize(1024, new SecureRandom());
+        KeyPair keyPair = keyPairGenerator.generateKeyPair();
+        
+        // Print the private and public keys
+        System.out.println("Private key: " + keyPair.getPrivate().toString());
+    }
+}

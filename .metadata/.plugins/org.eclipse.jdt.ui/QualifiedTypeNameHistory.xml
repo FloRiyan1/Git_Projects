@@ -1,2 +1,17 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<qualifiedTypeNameHistroy/>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="java.security.spec.ECParameterSpec"/>
+    <fullyQualifiedTypeName name="org.bouncycastle.math.ec.ECPoint"/>
+    <fullyQualifiedTypeName name="java.security.Provider"/>
+    <fullyQualifiedTypeName name="java.util.Arrays"/>
+    <fullyQualifiedTypeName name="java.security.PrivateKey"/>
+    <fullyQualifiedTypeName name="java.security.PublicKey"/>
+    <fullyQualifiedTypeName name="test.EllipticCurveKeyExample"/>
+    <fullyQualifiedTypeName name="org.bouncycastle.crypto.internal.KeyGenerationParameters"/>
+    <fullyQualifiedTypeName name="java.util.Base64"/>
+    <fullyQualifiedTypeName name="javax.crypto.KeyGenerator"/>
+    <fullyQualifiedTypeName name="javax.crypto.SecretKey"/>
+    <fullyQualifiedTypeName name="java.security.KeyPair"/>
+    <fullyQualifiedTypeName name="java.nio.charset.Charset"/>
+    <fullyQualifiedTypeName name="java.nio.charset.StandardCharsets"/>
+</qualifiedTypeNameHistroy>

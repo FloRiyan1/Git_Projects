@@ -4,9 +4,9 @@ import javax.swing.*;
 import java.awt.*;
 import javax.swing.BorderFactory;
 
-public class View 
+public class View extends JFrame
 {
-  public View() {
+    public View() {
     	
     }
     
@@ -138,5 +138,5 @@ public class View
 
         // Set the window to be visible
         setVisible(true);
-
+    }
 }

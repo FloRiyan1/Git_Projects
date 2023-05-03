@@ -1,0 +1,46 @@
+package verschluesselung.gui;
+
+import javax.swing.event.DocumentEvent;
+import javax.swing.event.DocumentListener;
+
+public class Tool 
+{
+	private View gui;
+	public Tool(View gui)
+	{
+		this.gui = gui;
+	}
+	
+	public void connectToGui()
+	{
+		setLabelText();
+		
+		this.gui.txtPrivateKey.setEditable(false);
+		this.gui.txtPublicKey.setEditable(false);
+		this.gui.txtVerschluesselt.setEditable(false);
+
+		this.gui.txtEingabe.getDocument().addDocumentListener(new DocumentListener() {
+            public void changedUpdate(DocumentEvent e) {
+                // This method is called whenever the text in the document is changed
+                // but not the structure of the document (e.g. style changes)
+                performAction();
+            }
+            public void removeUpdate(DocumentEvent e) {
+                // This method is called whenever text is removed from the document
+                performAction();
+            }
+            public void insertUpdate(DocumentEvent e) {
+                // This method is called whenever text is added to the document
+                performAction();
+            }
+        });
+	}
+
+	private void setLabelText() 
+	{
+		this.gui.lblEingabe.setText("Zu Verschlüsselnder Text:");
+		this.gui.lblPrivateKey.setText("PrivateKey:");
+		this.gui.lblPublicKey.setText("Public Key:");
+		this.gui.lblVerschluesseld.setText("Verschlüsselter text:");
+	}
+}

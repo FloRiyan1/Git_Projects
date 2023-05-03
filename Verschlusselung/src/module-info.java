@@ -7,4 +7,5 @@
  */
 module Verschlusselung {
 	requires org.bouncycastle.fips.core;
+	requires java.desktop;
 }

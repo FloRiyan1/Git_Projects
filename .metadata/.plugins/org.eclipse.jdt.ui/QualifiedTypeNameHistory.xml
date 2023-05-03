@@ -14,4 +14,12 @@
     <fullyQualifiedTypeName name="java.nio.charset.Charset"/>
     <fullyQualifiedTypeName name="java.nio.charset.StandardCharsets"/>
     <fullyQualifiedTypeName name="java.util.Base64"/>
+    <fullyQualifiedTypeName name="java.awt.GridBagLayout"/>
+    <fullyQualifiedTypeName name="verschluesselung.service.verschluesselungsServiceImpl"/>
+    <fullyQualifiedTypeName name="verschluesselung.service.KeyServiceImpl"/>
+    <fullyQualifiedTypeName name="javax.swing.text.BadLocationException"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="java.awt.event.ActionListener"/>
+    <fullyQualifiedTypeName name="javax.swing.event.DocumentListener"/>
+    <fullyQualifiedTypeName name="javax.swing.event.DocumentEvent"/>
 </qualifiedTypeNameHistroy>

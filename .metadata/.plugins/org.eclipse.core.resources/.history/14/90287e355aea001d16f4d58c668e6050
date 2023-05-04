@@ -1,0 +1,221 @@
+package verschluesselung.gui;
+
+import java.awt.Color;
+import java.io.IOException;
+import java.io.FileWriter;
+import javax.swing.JFileChooser;
+import javax.swing.filechooser.FileNameExtensionFilter;
+import java.io.File;
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.util.ArrayList;
+import java.util.List;
+
+import verschluesselung.service.KeyServiceImpl;
+import verschluesselung.service.VerschluesselungsServiceImpl;
+
+public class Tool 
+{
+	private View gui;
+	private String verschluesseltString;
+	private String publicKeyString;
+	private String privateKeyString;
+	
+	private VerschluesselungsServiceImpl verschluesselungsService;
+	private KeyServiceImpl keyService;
+	private String entschluesseltString;
+
+	public Tool(View gui)
+	{
+		this.gui = gui;
+		keyService = new KeyServiceImpl();
+		verschluesselungsService = new VerschluesselungsServiceImpl(keyService);
+		try 
+		{
+			privateKeyString = keyService.getPrivateKeyDes();
+			publicKeyString = keyService.getPublicKeyDes();
+		} 
+		catch (Exception e) 
+		{
+			e.printStackTrace();
+		}
+
+	}
+	
+	public void connectToGui()
+	{
+		setLabelText();
+		
+		this.gui.decryptButton.addActionListener(e -> decrypt());
+		this.gui.encryptButton.addActionListener(e -> encrypt());
+		this.gui.btnEntschluesselDatein.addActionListener(e -> decryptFile());
+		this.gui.btnVerschluesselDatein.addActionListener(e -> encryptFile());
+		this.gui.btnExport.addActionListener(e -> exportDecrypted());
+		this.gui.btnImport.addActionListener(e -> importDecrypted());
+	}
+	
+	private void exportDecrypted() 
+	{
+		String key = this.gui.txtPrivateKey.getText().replace("\n", "");
+		String Text = this.gui.txtVerschluesselt.getText();
+		
+		writeCSV(Text, key);
+		
+		
+	}
+
+	private void importDecrypted() {
+		String decryptetText = null;
+		String key = null;
+		
+		try 
+		{
+			List<String[]> inhalt = readCsvFile();
+			for (String[] strings : inhalt) 
+			{
+				decryptetText = strings[0];
+				key = insertLineBreaks(strings[1]);
+			}
+			
+			this.privateKeyString = key;
+			this.verschluesseltString = decryptetText;
+			
+			this.gui.txtPrivateKey.setText(key);
+			this.gui.txtVerschluesselt.setText(decryptetText);
+			
+			encrypt();
+		}
+		catch (IOException e) 
+		{
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+	}
+
+	private void decryptFile() {
+
+	}
+
+	private void encryptFile() {
+
+	}
+
+	private void decrypt() 
+	{
+		try 
+		{
+			this.privateKeyString = this.gui.txtPrivateKey.getText().replace("\n", "");
+			this.entschluesseltString = verschluesselungsService.decrypt(this.gui.txtVerschluesselt.getText(), privateKeyString);
+			this.gui.txtEntschluesselt.setText(entschluesseltString);
+			this.gui.txtPrivateKey.setBackground(gui.txtVerschluesselt.getBackground());
+			this.gui.txtPrivateKey.setToolTipText("");
+		}
+		catch (Exception e) 
+		{
+			this.gui.txtPrivateKey.setBackground(Color.RED);
+			this.gui.txtPrivateKey.setToolTipText("Falscher Schlüssel");
+		}
+	}
+
+	private void encrypt() 
+	{
+		try 
+		{
+			this.privateKeyString = this.gui.txtPrivateKey.getText().replace("\n", "");
+			this.verschluesseltString = verschluesselungsService.encrypt(this.gui.txtEntschluesselt.getText(), privateKeyString);
+			this.gui.txtVerschluesselt.setText(verschluesseltString);
+		}
+		catch (Exception e) 
+		{
+			e.printStackTrace();
+		}
+	}
+
+	public void updateGui()
+	{
+		this.gui.txtPrivateKey.setText(insertLineBreaks(privateKeyString));
+		this.gui.txtPublicKey.setText(insertLineBreaks(publicKeyString));
+		this.gui.txtVerschluesselt.setText(verschluesseltString);
+	}
+
+	public String insertLineBreaks(String text) {
+		
+		text = text.replace("\n", "");
+		StringBuilder builder = new StringBuilder(text);
+	    int i = 0;
+	    while (i + 8 < builder.length()) {
+	        i += 8;
+	        builder.insert(i, "\n");
+	        i++;
+	    }
+	    return builder.toString();
+	}
+	
+	private void setLabelText() 
+	{
+		this.gui.lblEingabe.setText("Zu Verschlüsselnder Text:");
+		this.gui.lblPrivateKey.setText("PrivateKey:");
+		this.gui.lblPublicKey.setText("Public Key:");
+		this.gui.lblVerschluesseld.setText("Verschlüsselter text:");
+	}
+
+	public String getPublicKeyString() {
+		return publicKeyString;
+	}
+
+	public void setPublicKeyString(String publicKeyString) {
+		this.publicKeyString = publicKeyString;
+	}
+
+	public String getPrivateKeyString() {
+		return privateKeyString;
+	}
+
+	public void setPrivateKeyString(String privateKeyString) {
+		this.privateKeyString = privateKeyString;
+	}
+	
+    private void writeCSV(String string1, String string2) 
+    {
+        try (FileWriter writer = new FileWriter(chooseFilePath())) 
+        {
+            writer.append(string1)
+                  .append(";")
+                  .append(string2);
+        }
+        catch (IOException e) 
+        {
+            System.err.println("Error writing to CSV file: " + e.getMessage());
+        }
+    }
+    
+    public List<String[]> readCsvFile() throws IOException 
+    {
+        List<String[]> data = new ArrayList<>();
+        try (BufferedReader br = new BufferedReader(new FileReader(chooseFilePath()))) 
+        {
+            String line;
+            while ((line = br.readLine()) != null) 
+            {
+                String[] row = line.split(";");
+                data.add(row);
+            }
+        }
+        return data;
+    }
+
+    public String chooseFilePath() 
+    {
+        JFileChooser fileChooser = new JFileChooser();
+        FileNameExtensionFilter filter = new FileNameExtensionFilter("CSV Files", "csv");
+        fileChooser.setFileFilter(filter);
+        int result = fileChooser.showOpenDialog(null);
+        if (result == JFileChooser.APPROVE_OPTION) 
+        {
+            File selectedFile = fileChooser.getSelectedFile();
+            return selectedFile.getAbsolutePath();
+        }
+        return null;
+    }
+}

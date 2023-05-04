@@ -22,4 +22,8 @@
     <fullyQualifiedTypeName name="java.awt.event.ActionListener"/>
     <fullyQualifiedTypeName name="javax.swing.event.DocumentListener"/>
     <fullyQualifiedTypeName name="javax.swing.event.DocumentEvent"/>
+    <fullyQualifiedTypeName name="java.awt.Color"/>
+    <fullyQualifiedTypeName name="java.lang.String"/>
+    <fullyQualifiedTypeName name="java.io.IOException"/>
+    <fullyQualifiedTypeName name="javax.swing.JTextArea"/>
 </qualifiedTypeNameHistroy>

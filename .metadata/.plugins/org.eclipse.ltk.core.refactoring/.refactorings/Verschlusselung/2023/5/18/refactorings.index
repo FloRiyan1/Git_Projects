@@ -24,3 +24,8 @@
 1683142056800	Rename package 'verschluesselung.test'
 1683142073592	Rename type 'verschluesselungsServiceImpl'
 1683142362686	Rename field 'txtEingabe'
+1683189407499	Convert local variable 'btnExport' to field
+1683189411487	Convert local variable 'btnImport' to field
+1683189414854	Convert local variable 'btnVerschluesselDatein' to field
+1683189417920	Convert local variable 'btnEntschluesselDatein' to field
+1683189550441	Rename method 'ImportDecrypted'

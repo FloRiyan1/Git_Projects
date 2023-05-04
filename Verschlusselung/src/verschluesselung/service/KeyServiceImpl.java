@@ -5,18 +5,19 @@ import java.security.KeyPairGenerator;
 import java.security.SecureRandom;
 import java.security.spec.ECGenParameterSpec;
 
-public class KeyServiceImpl {
-
-private KeyPair keyPair;
+public class KeyServiceImpl 
+{
+	private KeyPair keyPair;
 	
     private KeyPair generateKeyPair() throws Exception 
     {    	
     	String curveName = "secp256r1";
         KeyPairGenerator keyGen = KeyPairGenerator.getInstance("EC", "SunEC");
         ECGenParameterSpec ecSpec = new ECGenParameterSpec(curveName);
-        keyGen.initialize(ecSpec, new SecureRandom());
+        SecureRandom sr = new SecureRandom();
+        sr.setSeed(System.currentTimeMillis());
+        keyGen.initialize(ecSpec, sr);
         KeyPair keyPair = keyGen.generateKeyPair();
-
 		return keyPair;
     }
 
@@ -35,7 +36,7 @@ private KeyPair keyPair;
         KeyPair ecKeyPair = getKeyPair();
         byte[] ecPrivateKey = ecKeyPair.getPrivate().getEncoded();
         byte[] desKey = new byte[24];
-        System.arraycopy(ecPrivateKey, 0, desKey, 0, 24);
+        System.arraycopy(ecPrivateKey, 34, desKey, 0, 24);
 
         return byteArrayToString(desKey);
     }
@@ -45,7 +46,7 @@ private KeyPair keyPair;
     	KeyPair ecKeyPair = getKeyPair();
     	byte[] ecPublicKey = ecKeyPair.getPublic().getEncoded();
     	byte[] desKey = new byte[24];
-    	System.arraycopy(ecPublicKey, 0, desKey, 0, 24);
+    	System.arraycopy(ecPublicKey, 34, desKey, 0, 24);
     	
     	return byteArrayToString(desKey);
     }

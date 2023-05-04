@@ -21,6 +21,10 @@ public class View extends JFrame
     protected JScrollPane spEingabe;
     protected JButton encryptButton;
     protected JButton decryptButton;
+    protected JButton btnExport;
+    protected JButton btnImport;
+    protected JButton btnVerschluesselDatein;
+    protected JButton btnEntschluesselDatein;
 
 	public View() {
     	
@@ -30,7 +34,8 @@ public class View extends JFrame
     {
         // Set the title of the window
         setTitle("Verschlüsselungs Programm");
-
+        setDefaultCloseOperation(EXIT_ON_CLOSE);
+        
         // Create a new JPanel with a titled border
         JPanel panel = new JPanel();
         panel.setBorder(BorderFactory.createEmptyBorder(10, 20, 20, 20));
@@ -48,7 +53,7 @@ public class View extends JFrame
         gbc.gridwidth = 1;
         gbc.gridheight = 1;
         gbc.weightx = 0.2;
-        gbc.weighty = 0.1;
+        gbc.weighty = 0.05;
         gbc.fill = GridBagConstraints.BOTH;
         gbc.anchor = GridBagConstraints.CENTER;
         gbc.insets = new Insets(5, 5, 0, 5); // Add a 5 pixel margin between label and text area
@@ -60,7 +65,7 @@ public class View extends JFrame
         gbc.gridwidth = 1;
         gbc.gridheight = 1;
         gbc.weightx = 0.3;
-        gbc.weighty = 0.1;
+        gbc.weighty = 0.05;
         gbc.fill = GridBagConstraints.NONE;
         gbc.anchor = GridBagConstraints.CENTER;
         gbc.insets = new Insets(5, 5, 0, 5); // Add a 5 pixel margin between button and label
@@ -88,7 +93,7 @@ public class View extends JFrame
         gbc.gridwidth = 1;
         gbc.gridheight = 1;
         gbc.weightx = 0.25;
-        gbc.weighty = 0.1;
+        gbc.weighty = 0.05;
         gbc.fill = GridBagConstraints.BOTH;
         gbc.anchor = GridBagConstraints.CENTER;
         gbc.insets = new Insets(5, 5, 0, 5); // Add a 5 pixel margin between label and text area
@@ -100,7 +105,7 @@ public class View extends JFrame
         gbc.gridwidth = 1;
         gbc.gridheight = 1;
         gbc.weightx = 0.25;
-        gbc.weighty = 0.1;
+        gbc.weighty = 0.05;
         gbc.fill = GridBagConstraints.NONE;
         gbc.anchor = GridBagConstraints.CENTER;
         gbc.insets = new Insets(5, 5, 0, 5); // Add a 5 pixel margin between button and label
@@ -127,7 +132,7 @@ public class View extends JFrame
         gbc.gridwidth = 2;
         gbc.gridheight = 1;
         gbc.weightx = 0.5;
-        gbc.weighty = 0.1;
+        gbc.weighty = 0.05;
         gbc.fill = GridBagConstraints.BOTH;
         gbc.anchor = GridBagConstraints.CENTER;
         gbc.insets = new Insets(5, 5, 0, 5); // Add a 5 pixel margin between text areas and labels
@@ -152,7 +157,7 @@ public class View extends JFrame
         gbc.gridwidth = 2;
         gbc.gridheight = 1;
         gbc.weightx = 0.5;
-        gbc.weighty = 0.1;
+        gbc.weighty = 0.05;
         gbc.fill = GridBagConstraints.NONE;
         gbc.anchor = GridBagConstraints.WEST;
         gbc.insets = new Insets(5, 5, 0, 5); // Add a 5 pixel margin between label and text area
@@ -170,6 +175,54 @@ public class View extends JFrame
         gbc.anchor = GridBagConstraints.CENTER;
         gbc.insets = new Insets(0, 5, 5, 5); // Add a 5 pixel margin between text areas
         panel.add(spPublicKey, gbc);
+
+        btnExport = new JButton("Export");
+        gbc.gridx = 0;
+        gbc.gridy = 4;
+        gbc.gridwidth = 1;
+        gbc.gridheight = 1;
+        gbc.weightx = 0.25;
+        gbc.weighty = 0.05;
+        gbc.fill = GridBagConstraints.BOTH;
+        gbc.anchor = GridBagConstraints.CENTER;
+        gbc.insets = new Insets(0, 5, 5, 5); // Add a 5 pixel margin between text areas
+        panel.add(btnExport, gbc);
+
+        btnImport = new JButton("Import");
+        gbc.gridx = 1;
+        gbc.gridy = 4;
+        gbc.gridwidth = 1;
+        gbc.gridheight = 1;
+        gbc.weightx = 0.25;
+        gbc.weighty = 0.05;
+        gbc.fill = GridBagConstraints.BOTH;
+        gbc.anchor = GridBagConstraints.CENTER;
+        gbc.insets = new Insets(0, 5, 5, 5); // Add a 5 pixel margin between text areas
+        panel.add(btnImport, gbc);
+
+        btnVerschluesselDatein = new JButton("Datei Auswahl en");
+        gbc.gridx = 2;
+        gbc.gridy = 4;
+        gbc.gridwidth = 1;
+        gbc.gridheight = 1;
+        gbc.weightx = 0.25;
+        gbc.weighty = 0.05;
+        gbc.fill = GridBagConstraints.BOTH;
+        gbc.anchor = GridBagConstraints.CENTER;
+        gbc.insets = new Insets(0, 5, 5, 5); // Add a 5 pixel margin between text areas
+        panel.add(btnVerschluesselDatein, gbc);
+
+        btnEntschluesselDatein = new JButton("Datei Auswahl de");
+        gbc.gridx = 3;
+        gbc.gridy = 4;
+        gbc.gridwidth = 1;
+        gbc.gridheight = 1;
+        gbc.weightx = 0.25;
+        gbc.weighty = 0.05;
+        gbc.fill = GridBagConstraints.BOTH;
+        gbc.anchor = GridBagConstraints.CENTER;
+        gbc.insets = new Insets(0, 5, 5, 5); // Add a 5 pixel margin between text areas
+        panel.add(btnEntschluesselDatein, gbc);
 
         // Set the panel as the content pane of the frame
         setContentPane(panel);

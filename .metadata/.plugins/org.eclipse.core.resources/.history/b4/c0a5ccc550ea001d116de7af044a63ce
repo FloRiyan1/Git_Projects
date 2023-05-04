@@ -1,0 +1,71 @@
+package verschluesselung.service;
+
+import java.security.KeyPair;
+import java.security.KeyPairGenerator;
+import java.security.SecureRandom;
+import java.security.spec.ECGenParameterSpec;
+
+public class KeyServiceImpl {
+
+private KeyPair keyPair;
+	
+    private KeyPair generateKeyPair() throws Exception 
+    {    	
+    	String curveName = "secp256r1";
+        KeyPairGenerator keyGen = KeyPairGenerator.getInstance("EC", "SunEC");
+        ECGenParameterSpec ecSpec = new ECGenParameterSpec(curveName);
+        SecureRandom sr = new SecureRandom();
+        System.out.println(sr);
+        keyGen.initialize(ecSpec, sr);
+        KeyPair keyPair = keyGen.generateKeyPair();
+
+		return keyPair;
+    }
+
+	public KeyPair getKeyPair() throws Exception 
+	{
+		keyPair = generateKeyPair();
+		return keyPair;
+	}
+	
+	 // Converts the private key of the EC key pair to a Base64-encoded string
+    public String getPrivateKeyDes() throws Exception 
+    {
+        KeyPair ecKeyPair = getKeyPair();
+        byte[] ecPrivateKey = ecKeyPair.getPrivate().getEncoded();
+        byte[] desKey = new byte[24];
+        System.arraycopy(ecPrivateKey, 0, desKey, 0, 24);
+
+        return byteArrayToString(desKey);
+    }
+    
+    public String getPublicKeyDes() throws Exception 
+    {
+    	KeyPair ecKeyPair = getKeyPair();
+    	byte[] ecPublicKey = ecKeyPair.getPublic().getEncoded();
+    	byte[] desKey = new byte[24];
+    	System.arraycopy(ecPublicKey, 0, desKey, 0, 24);
+    	
+    	return byteArrayToString(desKey);
+    }
+    
+    public String byteArrayToString(byte[] byteArray) 
+    {
+        StringBuilder sb = new StringBuilder(byteArray.length * 2);
+        for (byte b : byteArray) {
+            sb.append(String.format("%02x", b));
+        }
+        return sb.toString();
+    }
+    
+    public byte[] stringToByteArray(String str) 
+    {
+        int len = str.length();
+        byte[] data = new byte[len / 2];
+        for (int i = 0; i < len; i += 2) {
+            data[i / 2] = (byte) ((Character.digit(str.charAt(i), 16) << 4)
+                                 + Character.digit(str.charAt(i+1), 16));
+        }
+        return data;
+    }
+}

@@ -1,0 +1,519 @@
+customername;orderid;orderdetailid;quantity;price
+Wilman Kala;10248;3;5;34
+Wilman Kala;10248;1;12;21
+Wilman Kala;10248;2;10;14
+Tradição Hipermercados;10249;5;40;53
+Tradição Hipermercados;10249;4;9;23
+Hanari Carnes;10250;8;15;21
+Hanari Carnes;10250;7;35;53
+Hanari Carnes;10250;6;10;9
+Victuailles en stock;10251;11;20;21
+Victuailles en stock;10251;9;6;21
+Victuailles en stock;10251;10;15;19
+Suprêmes délices;10252;12;40;81
+Suprêmes délices;10252;14;40;34
+Suprêmes délices;10252;13;25;2
+Hanari Carnes;10253;15;20;12
+Hanari Carnes;10253;17;40;20
+Hanari Carnes;10253;16;42;18
+Chop-suey Chinese;10254;20;21;10
+Chop-suey Chinese;10254;18;15;4
+Chop-suey Chinese;10254;19;21;24
+Richter Supermarkt;10255;24;30;55
+Richter Supermarkt;10255;21;20;19
+Richter Supermarkt;10255;22;35;17
+Richter Supermarkt;10255;23;25;19
+Wellington Importadora;10256;25;15;32
+Wellington Importadora;10256;26;12;13
+HILARIÓN-Abastos;10257;27;25;43
+HILARIÓN-Abastos;10257;29;15;13
+HILARIÓN-Abastos;10257;28;6;18
+Ernst Handel;10258;31;65;21
+Ernst Handel;10258;32;6;32
+Ernst Handel;10258;30;50;19
+Centro comercial Moctezuma;10259;34;1;26
+Centro comercial Moctezuma;10259;33;10;10
+Old World Delicatessen;10260;35;16;9
+Old World Delicatessen;10260;38;21;15
+Old World Delicatessen;10260;37;15;49
+Old World Delicatessen;10260;36;50;19
+Que Delícia;10261;40;20;18
+Que Delícia;10261;39;20;10
+Rattlesnake Canyon Grocery;10262;43;2;38
+Rattlesnake Canyon Grocery;10262;41;12;21
+Rattlesnake Canyon Grocery;10262;42;15;30
+Ernst Handel;10263;44;60;17
+Ernst Handel;10263;47;36;10
+Ernst Handel;10263;46;60;25
+Ernst Handel;10263;45;28;4
+Folk och fä HB;10264;49;25;9
+Folk och fä HB;10264;48;35;19
+Blondel père et fils;10265;50;30;39
+Blondel père et fils;10265;51;20;15
+Wartian Herkku;10266;52;12;38
+Frankenversand;10267;54;70;55
+Frankenversand;10267;55;15;18
+Frankenversand;10267;53;50;18
+GROSELLA-Restaurante;10268;56;10;123
+GROSELLA-Restaurante;10268;57;4;34
+White Clover Markets;10269;58;60;2
+White Clover Markets;10269;59;20;34
+Wartian Herkku;10270;61;25;46
+Wartian Herkku;10270;60;30;19
+Split Rail Beer & Ale;10271;62;24;2
+Rattlesnake Canyon Grocery;10272;63;6;81
+Rattlesnake Canyon Grocery;10272;65;24;34
+Rattlesnake Canyon Grocery;10272;64;40;12
+QUICK-Stop;10273;66;24;31
+QUICK-Stop;10273;70;33;18
+QUICK-Stop;10273;69;60;18
+QUICK-Stop;10273;68;20;2
+QUICK-Stop;10273;67;15;12
+Vins et alcools Chevalier;10274;71;20;21
+Vins et alcools Chevalier;10274;72;7;34
+Magazzini Alimentari Riuniti;10275;73;12;4
+Magazzini Alimentari Riuniti;10275;74;6;55
+Tortuga Restaurante;10276;76;10;6
+Tortuga Restaurante;10276;75;15;31
+Morgenstern Gesundkost;10277;78;12;49
+Morgenstern Gesundkost;10277;77;20;45
+Berglunds snabbköp;10278;79;16;19
+Berglunds snabbköp;10278;81;8;43
+Berglunds snabbköp;10278;80;15;55
+Berglunds snabbköp;10278;82;25;15
+Lehmanns Marktstand;10279;83;15;39
+Berglunds snabbköp;10280;85;20;24
+Berglunds snabbköp;10280;84;12;4
+Berglunds snabbköp;10280;86;30;7
+Romero y tomillo;10281;87;1;9
+Romero y tomillo;10281;89;4;18
+Romero y tomillo;10281;88;6;4
+Romero y tomillo;10282;91;2;19
+Romero y tomillo;10282;90;6;25
+LILA-Supermercado;10283;95;3;34
+LILA-Supermercado;10283;94;35;34
+LILA-Supermercado;10283;93;18;9
+LILA-Supermercado;10283;92;20;15
+Lehmanns Marktstand;10284;99;5;14
+Lehmanns Marktstand;10284;98;20;34
+Lehmanns Marktstand;10284;97;21;19
+Lehmanns Marktstand;10284;96;15;43
+QUICK-Stop;10285;102;36;32
+QUICK-Stop;10285;101;40;18
+QUICK-Stop;10285;100;45;18
+QUICK-Stop;10286;104;40;49
+QUICK-Stop;10286;103;100;18
+Ricardo Adocicados;10287;105;40;17
+Ricardo Adocicados;10287;107;15;12
+Ricardo Adocicados;10287;106;20;14
+Reggiani Caseifici;10288;108;10;7
+Reggiani Caseifici;10288;109;3;12
+B's Beverages;10289;110;30;10
+B's Beverages;10289;111;9;33
+Comércio Mineiro;10290;113;15;123
+Comércio Mineiro;10290;112;20;21
+Comércio Mineiro;10290;115;10;13
+Comércio Mineiro;10290;114;15;20
+Que Delícia;10291;116;20;6
+Que Delícia;10291;117;24;19
+Que Delícia;10291;118;2;53
+Tradição Hipermercados;10292;119;20;81
+Tortuga Restaurante;10293;120;12;62
+Tortuga Restaurante;10293;122;5;43
+Tortuga Restaurante;10293;121;10;4
+Tortuga Restaurante;10293;123;6;7
+Rattlesnake Canyon Grocery;10294;128;6;7
+Rattlesnake Canyon Grocery;10294;126;15;46
+Rattlesnake Canyon Grocery;10294;125;15;39
+Rattlesnake Canyon Grocery;10294;127;21;34
+Rattlesnake Canyon Grocery;10294;124;18;18
+Vins et alcools Chevalier;10295;129;4;38
+LILA-Supermercado;10296;130;12;21
+LILA-Supermercado;10296;131;30;17
+LILA-Supermercado;10296;132;15;36
+Blondel père et fils;10297;133;60;18
+Blondel père et fils;10297;134;20;34
+Hungry Owl All-Night Grocers;10298;135;40;19
+Hungry Owl All-Night Grocers;10298;136;40;19
+Hungry Owl All-Night Grocers;10298;138;15;49
+Hungry Owl All-Night Grocers;10298;137;30;55
+Ricardo Adocicados;10299;140;20;15
+Ricardo Adocicados;10299;139;15;9
+Magazzini Alimentari Riuniti;10300;142;20;12
+Magazzini Alimentari Riuniti;10300;141;30;17
+Die Wandernde Kuh;10301;144;20;38
+Die Wandernde Kuh;10301;143;10;18
+Suprêmes délices;10302;146;28;45
+Suprêmes délices;10302;147;12;46
+Suprêmes délices;10302;145;40;39
+Godos Cocina Típica;10303;148;40;18
+Godos Cocina Típica;10303;149;30;21
+Godos Cocina Típica;10303;150;15;12
+Tortuga Restaurante;10304;151;30;20
+Tortuga Restaurante;10304;152;10;55
+Tortuga Restaurante;10304;153;2;21
+Old World Delicatessen;10305;154;25;62
+Old World Delicatessen;10305;156;30;18
+Old World Delicatessen;10305;155;25;123
+Romero y tomillo;10306;157;10;25
+Romero y tomillo;10306;159;5;7
+Romero y tomillo;10306;158;10;32
+Lonesome Pine Restaurant;10307;161;3;12
+Lonesome Pine Restaurant;10307;160;10;49
+Ana Trujillo Emparedados y hel;10308;163;5;15
+Ana Trujillo Emparedados y hel;10308;162;1;36
+Hungry Owl All-Night Grocers;10309;166;2;14
+Hungry Owl All-Night Grocers;10309;164;20;22
+Hungry Owl All-Night Grocers;10309;167;20;46
+Hungry Owl All-Night Grocers;10309;168;3;21
+Hungry Owl All-Night Grocers;10309;165;30;25
+The Big Cheese;10310;169;10;17
+The Big Cheese;10310;170;5;49
+Du monde entier;10311;172;7;36
+Du monde entier;10311;171;6;14
+Die Wandernde Kuh;10312;176;10;7
+Die Wandernde Kuh;10312;173;4;45
+Die Wandernde Kuh;10312;174;24;46
+Die Wandernde Kuh;10312;175;20;32
+QUICK-Stop;10313;177;12;19
+Rattlesnake Canyon Grocery;10314;180;25;49
+Rattlesnake Canyon Grocery;10314;179;30;13
+Rattlesnake Canyon Grocery;10314;178;40;32
+Island Trading;10315;181;14;14
+Island Trading;10315;182;30;15
+Rattlesnake Canyon Grocery;10316;184;70;49
+Rattlesnake Canyon Grocery;10316;183;10;9
+Lonesome Pine Restaurant;10317;185;20;18
+Island Trading;10318;187;6;18
+Island Trading;10318;186;20;9
+Tortuga Restaurante;10319;188;8;39
+Tortuga Restaurante;10319;189;14;45
+Tortuga Restaurante;10319;190;30;18
+Wartian Herkku;10320;191;30;21
+Island Trading;10321;192;10;18
+Pericles Comidas clásicas;10322;193;20;7
+Königlich Essen;10323;195;4;14
+Königlich Essen;10323;196;4;18
+Königlich Essen;10323;194;5;15
+Save-a-lot Markets;10324;200;40;55
+Save-a-lot Markets;10324;199;30;12
+Save-a-lot Markets;10324;197;21;17
+Save-a-lot Markets;10324;201;80;43
+Save-a-lot Markets;10324;198;70;18
+Königlich Essen;10325;202;6;25
+Königlich Essen;10325;205;4;12
+Königlich Essen;10325;206;40;34
+Königlich Essen;10325;203;12;6
+Königlich Essen;10325;204;9;23
+Bólido Comidas preparadas;10326;207;24;22
+Bólido Comidas preparadas;10326;208;16;19
+Bólido Comidas preparadas;10326;209;50;7
+Folk och fä HB;10327;210;25;19
+Folk och fä HB;10327;213;30;13
+Folk och fä HB;10327;211;50;21
+Folk och fä HB;10327;212;35;25
+Furia Bacalhau e Frutos do Mar;10328;216;10;12
+Furia Bacalhau e Frutos do Mar;10328;214;9;55
+Furia Bacalhau e Frutos do Mar;10328;215;40;21
+Split Rail Beer & Ale;10329;219;20;263
+Split Rail Beer & Ale;10329;217;10;9
+Split Rail Beer & Ale;10329;218;8;25
+Split Rail Beer & Ale;10329;220;12;38
+LILA-Supermercado;10330;222;25;34
+LILA-Supermercado;10330;221;50;31
+Bon app';10331;223;15;7
+Mère Paillarde;10332;225;10;14
+Mère Paillarde;10332;224;40;62
+Mère Paillarde;10332;226;16;9
+Wartian Herkku;10333;227;10;23
+Wartian Herkku;10333;229;40;21
+Wartian Herkku;10333;228;10;10
+Victuailles en stock;10334;231;10;12
+Victuailles en stock;10334;230;8;7
+Hungry Owl All-Night Grocers;10335;235;48;53
+Hungry Owl All-Night Grocers;10335;233;25;12
+Hungry Owl All-Night Grocers;10335;232;7;19
+Hungry Owl All-Night Grocers;10335;234;6;32
+Princesa Isabel Vinhoss;10336;236;18;22
+Frankenversand;10337;238;24;31
+Frankenversand;10337;239;20;19
+Frankenversand;10337;241;25;34
+Frankenversand;10337;240;28;26
+Frankenversand;10337;237;40;9
+Old World Delicatessen;10338;242;20;39
+Old World Delicatessen;10338;243;15;25
+Mère Paillarde;10339;245;70;39
+Mère Paillarde;10339;246;28;49
+Mère Paillarde;10339;244;10;22
+Bon app';10340;249;40;46
+Bon app';10340;247;20;62
+Bon app';10340;248;12;9
+Simons bistro;10341;251;9;55
+Simons bistro;10341;250;8;2
+Frankenversand;10342;255;40;24
+Frankenversand;10342;253;56;12
+Frankenversand;10342;252;24;19
+Frankenversand;10342;254;40;19
+Lehmanns Marktstand;10343;258;15;18
+Lehmanns Marktstand;10343;257;4;12
+Lehmanns Marktstand;10343;256;50;33
+White Clover Markets;10344;260;70;40
+White Clover Markets;10344;259;35;22
+QUICK-Stop;10345;263;9;14
+QUICK-Stop;10345;261;70;40
+QUICK-Stop;10345;262;80;9
+Rattlesnake Canyon Grocery;10346;265;20;38
+Rattlesnake Canyon Grocery;10346;264;36;39
+Familia Arquibaldo;10347;266;10;14
+Familia Arquibaldo;10347;268;4;18
+Familia Arquibaldo;10347;269;6;7
+Familia Arquibaldo;10347;267;50;18
+Die Wandernde Kuh;10348;271;25;9
+Die Wandernde Kuh;10348;270;15;18
+Split Rail Beer & Ale;10349;272;24;7
+La maison d'Asie;10350;274;18;36
+La maison d'Asie;10350;273;15;16
+Ernst Handel;10351;276;13;9
+Ernst Handel;10351;275;20;263
+Ernst Handel;10351;277;77;19
+Ernst Handel;10351;278;10;21
+Furia Bacalhau e Frutos do Mar;10352;280;20;7
+Furia Bacalhau e Frutos do Mar;10352;279;10;4
+Piccolo und mehr;10353;282;50;263
+Piccolo und mehr;10353;281;12;21
+Pericles Comidas clásicas;10354;283;12;18
+Pericles Comidas clásicas;10354;284;4;123
+Around the Horn;10355;285;25;4
+Around the Horn;10355;286;25;19
+Die Wandernde Kuh;10356;288;12;24
+Die Wandernde Kuh;10356;289;20;36
+Die Wandernde Kuh;10356;287;30;12
+LILA-Supermercado;10357;291;16;31
+LILA-Supermercado;10357;290;30;31
+LILA-Supermercado;10357;292;8;34
+La maison d'Asie;10358;295;20;19
+La maison d'Asie;10358;294;10;14
+La maison d'Asie;10358;293;10;4
+Seven Seas Imports;10359;296;56;17
+Seven Seas Imports;10359;297;70;12
+Seven Seas Imports;10359;298;80;34
+Blondel père et fils;10360;302;35;20
+Blondel père et fils;10360;303;28;7
+Blondel père et fils;10360;299;30;45
+Blondel père et fils;10360;300;35;123
+Blondel père et fils;10360;301;10;263
+QUICK-Stop;10361;305;55;34
+QUICK-Stop;10361;304;54;18
+Bon app';10362;307;20;53
+Bon app';10362;306;50;14
+Bon app';10362;308;24;7
+Drachenblut Delikatessend;10363;309;20;12
+Drachenblut Delikatessend;10363;311;12;18
+Drachenblut Delikatessend;10363;310;12;7
+Eastern Connection;10364;313;5;21
+Eastern Connection;10364;312;30;36
+Antonio Moreno Taquería;10365;314;24;21
+Galería del gastrónomo;10366;315;5;21
+Galería del gastrónomo;10366;316;5;13
+Vaffeljernet;10367;320;7;13
+Vaffeljernet;10367;319;15;21
+Vaffeljernet;10367;317;36;14
+Vaffeljernet;10367;318;18;7
+Ernst Handel;10368;324;35;33
+Ernst Handel;10368;322;13;45
+Ernst Handel;10368;321;5;10
+Ernst Handel;10368;323;25;19
+Split Rail Beer & Ale;10369;325;20;123
+Split Rail Beer & Ale;10369;326;18;38
+Chop-suey Chinese;10370;328;30;33
+Chop-suey Chinese;10370;329;20;10
+Chop-suey Chinese;10370;327;15;18
+La maison d'Asie;10371;330;6;19
+Queen Cozinha;10372;334;42;34
+Queen Cozinha;10372;332;40;263
+Queen Cozinha;10372;333;70;34
+Queen Cozinha;10372;331;12;81
+Hungry Owl All-Night Grocers;10373;336;50;21
+Hungry Owl All-Night Grocers;10373;335;80;13
+Wolski;10374;337;30;12
+Wolski;10374;338;15;13
+Hungry Coyote Import Store;10375;340;10;7
+Hungry Coyote Import Store;10375;339;15;23
+Mère Paillarde;10376;341;42;12
+Seven Seas Imports;10377;343;20;18
+Seven Seas Imports;10377;342;20;45
+Folk och fä HB;10378;344;6;21
+Que Delícia;10379;346;16;43
+Que Delícia;10379;345;8;9
+Que Delícia;10379;347;20;21
+Hungry Owl All-Night Grocers;10380;348;18;25
+Hungry Owl All-Night Grocers;10380;349;20;32
+Hungry Owl All-Night Grocers;10380;350;6;34
+Hungry Owl All-Night Grocers;10380;351;30;15
+LILA-Supermercado;10381;352;14;10
+Ernst Handel;10382;356;60;2
+Ernst Handel;10382;357;50;10
+Ernst Handel;10382;355;14;123
+Ernst Handel;10382;353;32;21
+Ernst Handel;10382;354;9;62
+Around the Horn;10383;359;15;16
+Around the Horn;10383;360;20;38
+Around the Horn;10383;358;20;6
+Berglunds snabbköp;10384;361;28;81
+Berglunds snabbköp;10384;362;15;34
+Split Rail Beer & Ale;10385;363;10;30
+Split Rail Beer & Ale;10385;365;8;12
+Split Rail Beer & Ale;10385;364;20;34
+Familia Arquibaldo;10386;366;15;4
+Familia Arquibaldo;10386;367;10;14
+Santé Gourmet;10387;371;15;21
+Santé Gourmet;10387;369;6;45
+Santé Gourmet;10387;368;15;4
+Santé Gourmet;10387;370;12;55
+Seven Seas Imports;10388;373;20;7
+Seven Seas Imports;10388;372;15;9
+Seven Seas Imports;10388;374;40;32
+Bottom-Dollar Marketse;10389;378;30;15
+Bottom-Dollar Marketse;10389;376;15;24
+Bottom-Dollar Marketse;10389;377;20;49
+Bottom-Dollar Marketse;10389;375;16;31
+Ernst Handel;10390;380;40;18
+Ernst Handel;10390;382;24;34
+Ernst Handel;10390;379;60;12
+Ernst Handel;10390;381;45;12
+Drachenblut Delikatessend;10391;383;18;6
+Piccolo und mehr;10392;384;50;36
+Save-a-lot Markets;10393;388;70;31
+Save-a-lot Markets;10393;386;42;23
+Save-a-lot Markets;10393;387;7;14
+Save-a-lot Markets;10393;385;25;19
+Save-a-lot Markets;10393;389;32;12
+Hungry Coyote Import Store;10394;390;10;6
+Hungry Coyote Import Store;10394;391;10;49
+HILARIÓN-Abastos;10395;392;28;12
+HILARIÓN-Abastos;10395;394;8;36
+HILARIÓN-Abastos;10395;393;70;32
+Frankenversand;10396;396;60;21
+Frankenversand;10396;395;40;9
+Frankenversand;10396;397;21;34
+Princesa Isabel Vinhoss;10397;399;18;53
+Princesa Isabel Vinhoss;10397;398;10;10
+Save-a-lot Markets;10398;400;30;18
+Save-a-lot Markets;10398;401;120;24
+Vaffeljernet;10399;402;60;12
+Vaffeljernet;10399;405;14;13
+Vaffeljernet;10399;403;30;21
+Vaffeljernet;10399;404;35;18
+Eastern Connection;10400;407;35;18
+Eastern Connection;10400;408;30;20
+Eastern Connection;10400;406;21;123
+Rattlesnake Canyon Grocery;10401;409;18;25
+Rattlesnake Canyon Grocery;10401;412;60;21
+Rattlesnake Canyon Grocery;10401;410;70;38
+Rattlesnake Canyon Grocery;10401;411;20;21
+Ernst Handel;10402;414;65;43
+Ernst Handel;10402;413;60;9
+Ernst Handel;10403;415;21;17
+Ernst Handel;10403;416;70;12
+Magazzini Alimentari Riuniti;10404;417;30;31
+Magazzini Alimentari Riuniti;10404;419;30;20
+Magazzini Alimentari Riuniti;10404;418;40;14
+LINO-Delicateses;10405;420;50;10
+Queen Cozinha;10406;421;10;18
+Queen Cozinha;10406;424;5;19
+Queen Cozinha;10406;425;2;18
+Queen Cozinha;10406;423;42;45
+Queen Cozinha;10406;422;30;10
+Ottilies Käseladen;10407;426;30;21
+Ottilies Käseladen;10407;427;15;36
+Ottilies Käseladen;10407;428;15;21
+Folies gourmandes;10408;431;35;49
+Folies gourmandes;10408;429;10;26
+Folies gourmandes;10408;430;6;7
+Océano Atlántico Ltda.;10409;433;12;10
+Océano Atlántico Ltda.;10409;432;12;23
+Bottom-Dollar Marketse;10410;435;16;55
+Bottom-Dollar Marketse;10410;434;49;2
+Bottom-Dollar Marketse;10411;437;40;19
+Bottom-Dollar Marketse;10411;438;9;55
+Bottom-Dollar Marketse;10411;436;25;9
+Wartian Herkku;10412;439;20;23
+La maison d'Asie;10413;440;24;18
+La maison d'Asie;10413;441;40;49
+La maison d'Asie;10413;442;14;18
+Familia Arquibaldo;10414;443;18;9
+Familia Arquibaldo;10414;444;50;2
+Hungry Coyote Import Store;10415;445;2;39
+Hungry Coyote Import Store;10415;446;20;2
+Wartian Herkku;10416;447;20;9
+Wartian Herkku;10416;448;10;32
+Wartian Herkku;10416;449;20;19
+Simons bistro;10417;451;2;12
+Simons bistro;10417;450;50;263
+Simons bistro;10417;452;36;12
+Simons bistro;10417;453;35;13
+QUICK-Stop;10418;454;60;19
+QUICK-Stop;10418;455;55;9
+QUICK-Stop;10418;457;15;10
+QUICK-Stop;10418;456;16;28
+Richter Supermarkt;10419;458;60;34
+Richter Supermarkt;10419;459;20;36
+Wellington Importadora;10420;463;20;15
+Wellington Importadora;10420;460;20;97
+Wellington Importadora;10420;462;8;15
+Wellington Importadora;10420;461;2;6
+Que Delícia;10421;464;4;9
+Que Delícia;10421;467;10;13
+Que Delícia;10421;465;30;31
+Que Delícia;10421;466;15;32
+Franchi S.p.A.;10422;468;2;31
+Gourmet Lanchonetes;10423;469;14;12
+Gourmet Lanchonetes;10423;470;20;55
+Mère Paillarde;10424;472;49;263
+Mère Paillarde;10424;473;30;12
+Mère Paillarde;10424;471;60;18
+La maison d'Asie;10425;474;10;24
+La maison d'Asie;10425;475;20;18
+Galería del gastrónomo;10426;477;7;33
+Galería del gastrónomo;10426;476;5;38
+Piccolo und mehr;10427;478;35;23
+Reggiani Caseifici;10428;479;20;12
+Hungry Owl All-Night Grocers;10429;480;40;16
+Hungry Owl All-Night Grocers;10429;481;35;43
+Ernst Handel;10430;484;30;38
+Ernst Handel;10430;483;50;10
+Ernst Handel;10430;482;45;39
+Ernst Handel;10430;485;70;55
+Bottom-Dollar Marketse;10431;488;30;9
+Bottom-Dollar Marketse;10431;487;50;18
+Bottom-Dollar Marketse;10431;486;50;39
+Split Rail Beer & Ale;10432;489;10;31
+Split Rail Beer & Ale;10432;490;40;7
+Princesa Isabel Vinhoss;10433;491;28;38
+Folk och fä HB;10434;493;18;18
+Folk och fä HB;10434;492;6;21
+Consolidated Holdings;10435;494;10;19
+Consolidated Holdings;10435;496;10;34
+Consolidated Holdings;10435;495;12;21
+Blondel père et fils;10436;500;24;7
+Blondel père et fils;10436;498;40;38
+Blondel père et fils;10436;497;5;12
+Blondel père et fils;10436;499;30;33
+Wartian Herkku;10437;501;15;32
+Toms Spezialitäten;10438;504;15;19
+Toms Spezialitäten;10438;502;15;9
+Toms Spezialitäten;10438;503;20;14
+Mère Paillarde;10439;505;15;38
+Mère Paillarde;10439;506;16;17
+Mère Paillarde;10439;508;30;10
+Mère Paillarde;10439;507;6;33
+Save-a-lot Markets;10440;509;45;19
+Save-a-lot Markets;10440;512;90;28
+Save-a-lot Markets;10440;510;49;17
+Save-a-lot Markets;10440;511;24;123
+Old World Delicatessen;10441;513;50;43
+Ernst Handel;10442;516;60;17
+Ernst Handel;10442;514;30;21
+Ernst Handel;10442;515;80;7
+Reggiani Caseifici;10443;517;6;21
+Reggiani Caseifici;10443;518;12;45

@@ -1,0 +1,54 @@
+RECHNUNG
+
+
+Rechnung an: 
+
+Frankenversand                       	Rechnungsnummer:	10000
+Straße                                	Rechnungsdatum:		17-05-2023
+PLZ Ort                              	Fälligkeitsdatum:	2023-05-31
+
+
+
+Anzahl    	Beschreibung                  	Preis    	Gesamtbetrag
+______________________________________________________________________
+70        	Beschreibung                     	55.0      		3850.0
+
+15        	Beschreibung                     	18.0        	270.0
+
+50        	Beschreibung                     	18.0        	900.0
+
+24        	Beschreibung                     	31.0        	744.0
+
+20        	Beschreibung                     	19.0        	380.0
+
+25        	Beschreibung                     	34.0        	850.0
+
+28        	Beschreibung                     	26.0        	728.0
+
+40        	Beschreibung                     	9.0         	360.0
+
+40        	Beschreibung                     	24.0        	960.0
+
+56        	Beschreibung                     	12.0        	672.0
+
+24        	Beschreibung                     	19.0        	456.0
+
+40        	Beschreibung                     	19.0        	760.0
+
+60        	Beschreibung                     	21.0      		1260.0
+
+40        	Beschreibung                     	9.0         	360.0
+
+21        	Beschreibung                     	34.0        	714.0
+
+______________________________________________________________________
+                                            Gesamt Preis:    	3850
+                                            Mwst:         		19%
+                                            End Preis:			4581.5
+______________________________________________________________________
+                                            Skonto 14 Tage:     2%
+                                            Skonto:   			3773.0
+______________________________________________________________________
+
+Mit freundlichen Grüßen
+Eric Schikowski

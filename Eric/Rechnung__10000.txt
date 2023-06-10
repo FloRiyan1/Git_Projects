@@ -1,0 +1,26 @@
+RECHNUNG
+
+
+Rechnung an: 
+
+                                     	Rechnungsnummer:	10000
+Stra�e                                	Rechnungsdatum:		17-05-2023
+PLZ Ort                              	F�lligkeitsdatum:	2023-05-31
+
+
+
+Anzahl      	OrderId                     	Preis    	Gesamtbetrag
+______________________________________________________________________
+10            	10250                        	9.0          	90.0
+
+______________________________________________________________________
+                                            Gesamt Preis:      	90
+                                            Mwst:         		19%
+                                            End Preis: 			107.1
+______________________________________________________________________
+Wenn sie innerhalb von 14 Tagen zahlen gew�hren wir ihnen 3% Skonto
+                                            Skonto:     	    87.3
+______________________________________________________________________
+
+Mit freundlichen Gr��en
+Eric Schikowski
